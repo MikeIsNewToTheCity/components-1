@@ -22,41 +22,54 @@ export class TdjRollDiceComponent implements OnInit {
   //Displays Rolled Value in an alert box
   displayRM = (rn:number,dt:number) => {alert(`A D${dt} was rolled.... You got a ${rn}!`)};
 
-  rollDiceFour = () => {
-    let max = 4; //Dice Value
-    let rn = (this.getNumber(max));
-    this.displayRM(rn,max);
+  //Test for Different WkSLT4 Start here
+    // ds = The amount of side the selected dice has.
+
+
+  rollDice = (ds:any) => {
+    let rn = (this.getNumber(ds));
+    this.displayRM(rn,ds);
+    console.log(`selected: ${ds} ${rn}`);
   };
 
-  rollDiceSix = () => {
-    let max = 6; //Dice Value
-    let rn = (this.getNumber(max));
-    this.displayRM(rn,max);
-  };
 
-  rollDiceEight = () => {
-    let max = 8; //Dice Value
-    let rn = (this.getNumber(max));
-    this.displayRM(rn,max);
-  };
+  //End of test
 
-  rollDiceTen = () => {
-    let max = 10; //Dice Value
-    let rn = (this.getNumber(max));
-    this.displayRM(rn,max);
-  };
+  // rollDiceFour = () => {
+  //   let max = 4; //Dice Value
+  //   let rn = (this.getNumber(max));
+  //   this.displayRM(rn,max);
+  // };
 
-  rollDiceTwelve = () => {
-    let max = 12; //Dice Value
-    let rn = (this.getNumber(max));
-    this.displayRM(rn,max);
-  };
+  // rollDiceSix = () => {
+  //   let max = 6; //Dice Value
+  //   let rn = (this.getNumber(max));
+  //   this.displayRM(rn,max);
+  // };
 
-  rollDiceTwenty = () => {
-    let max = 20; //Dice Value
-    let rn = (this.getNumber(max));
-    this.displayRM(rn,max);
-  };
+  // rollDiceEight = () => {
+  //   let max = 8; //Dice Value
+  //   let rn = (this.getNumber(max));
+  //   this.displayRM(rn,max);
+  // };
+
+  // rollDiceTen = () => {
+  //   let max = 10; //Dice Value
+  //   let rn = (this.getNumber(max));
+  //   this.displayRM(rn,max);
+  // };
+
+  // rollDiceTwelve = () => {
+  //   let max = 12; //Dice Value
+  //   let rn = (this.getNumber(max));
+  //   this.displayRM(rn,max);
+  // };
+
+  // rollDiceTwenty = () => {
+  //   let max = 20; //Dice Value
+  //   let rn = (this.getNumber(max));
+  //   this.displayRM(rn,max);
+  // };
 
 
   areYouJoking = () => { //You shouldn't be looking at this...
