@@ -13,22 +13,22 @@ export class ExtrasService {
       {
         name: 'Coke'
         , price: 1.75
-        , imagePath: '../../assets/images/coke.jpg'
+        , imagePath: 'assets/images/coke.jpg'
       }
       , {
         name: 'Sprite'
         , price: 1.75
-        , imagePath: '../../assets/images/sprite.jpg'
+        , imagePath: 'assets/images/sprite.jpg'
       }      
       , {
         name: 'Diet Coke'
         , price: 1.75
-        , imagePath: '../../assets/images/diet.jpg'
+        , imagePath: 'assets/images/diet.jpg'
       }      
       , {
         name: 'Fanta Orange'
         , price: 1.75
-        , imagePath: '../../assets/images/fanta.jpg'
+        , imagePath: 'assets/images/fanta.jpg'
       }
     ];
 
