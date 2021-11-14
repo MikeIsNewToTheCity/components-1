@@ -1,0 +1,21 @@
+<h2>Extras</h2>
+
+<div class="grid">
+    <div *ngFor="let ext of extras" class="grid-item">
+        <mat-card class="example-card">
+            <mat-card-title-group>
+                <mat-card-title>{{ ext.name }}</mat-card-title>
+                <mat-card-subtitle>{{ ext.price | currency }}</mat-card-subtitle>
+                <img mat-card-md-image src="{{ ext.imagePath }}">
+            </mat-card-title-group>
+            <mat-card-content>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Qty</mat-label>
+                    <input matInput #qty type="number" maxlength="5" placeholder="Quantity" value="0">
+
+                </mat-form-field>&nbsp;&nbsp;
+                <button mat-raised-button color="accent">Add to Order</button>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

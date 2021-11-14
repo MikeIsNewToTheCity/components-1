@@ -1,0 +1,15 @@
+<mat-card>
+    <mat-card-title>
+        Brad's slack-n-tell Fall Classes
+    </mat-card-title>
+    <br>
+    <mat-card-content>
+        <mat-chip-list>
+            <mat-chip
+                *ngFor="let class of classes"
+            >
+                {{ class }}
+            </mat-chip>
+        </mat-chip-list>
+    </mat-card-content>
+</mat-card>
