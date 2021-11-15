@@ -23,6 +23,7 @@ import { AlAdditionComponent } from './al-addition/al-addition.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { WisconsinSalesTaxComponent } from './wisconsin-sales-tax/wisconsin-sales-tax.component';
 import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
+import { TdjRollDiceComponent } from './tdj-roll-dice/tdj-roll-dice.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
     TjsAdditionComponent,
     TjsMultiplicationComponent,
     WisconsinSalesTaxComponent,
+    TdjRollDiceComponent,
     TipAmountComponent,
     PizzaExtrasComponent
   ],
